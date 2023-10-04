@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { nanoid } from 'nanoid';
@@ -11,12 +11,6 @@ import { add } from "redux/contactSlice";
 
 
 export function FormContact() {
-//     const [contacts, setContacts] = useState(()=>{return JSON.parse(window.localStorage.getItem('contacts')) ?? []}   )
-  
-
-//   useEffect(() => { 
-//     window.localStorage.setItem('contacts', JSON.stringify(contacts))
-//   }, [contacts])
   
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
